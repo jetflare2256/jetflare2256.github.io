@@ -16,7 +16,7 @@ body{
     padding: 1rem 2rem;
     text-align: center;
 }
-.page{width:80vw;height:200vh;border:1px solid red}
+.page{width:80vw;height:1600px;border:1px solid red}
 nav ul li{display:inline}
 #page1{background:gray}
 #page2{background:grey}
