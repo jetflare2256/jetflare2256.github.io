@@ -1,0 +1,73 @@
+body{
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.25rem;
+    background-color: #26a500;
+}
+*{
+    box-sizing: border-box;
+    }
+.flex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.col{
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.page{width:80vw;height:80vh;border:1px solid red}
+nav ul li{display:inline;}
+#page1{background:gray  }
+#page2{background:grey}
+#page3{background:gray}
+#columnA{
+    flex-basis: 33.33333%;
+    background-color: #AFEAAA;
+}
+#columnB{
+    flex-basis: 33.33333%;
+    background-color: #51A5BA;
+}
+#columnC{
+    flex-basis: 33.33333%;
+    background-color: #6BCAE2;
+}
+
+#tank {
+    background-image: url("C:/Users/65819/Documents/s3/dx1215/webdev-jetflare2256/ica 2/images/tractor.png");
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+@media screen and (max-width:1150px) {
+    #columnA, #columnB {
+        flex: 1;
+    }
+    #columnC{
+        flex-basis: 100%;
+        }
+    }
+#menu{display:none;}
+    @media screen and (max-width:800px){
+    nav ul li{display:block;} /*make a menu items vertical*/
+    #menu{display: block;} /* unhide menu icon */
+    nav ul{display:none;} /*hide the menu item list*/
+}
+.menuHide{
+    display: block
+}
+@media screen and (max-width:800px) {
+    body{
+        #columnA, #columnB, #columnC{
+            flex-basis: 100%;
+        }
+        background-color: rgb(255, 145, 224);
+    }
+    }
