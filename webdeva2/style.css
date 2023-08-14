@@ -16,9 +16,9 @@ body{
     padding: 1rem 2rem;
     text-align: center;
 }
-.page{width:80vw;height:80vh;border:1px solid red}
-nav ul li{display:inline;}
-#page1{background:gray  }
+.page{width:80vw;height:200vh;border:1px solid red}
+nav ul li{display:inline}
+#page1{background:gray}
 #page2{background:grey}
 #page3{background:gray}
 #columnA{
@@ -35,7 +35,7 @@ nav ul li{display:inline;}
 }
 
 #tank {
-    background-image: url("C:/Users/65819/Documents/s3/dx1215/webdev-jetflare2256/ica 2/images/tractor.png");
+    background-image: url("./images/tractor.png");
     width: 250px;
     height: 100px;
     border-radius: 50%;
@@ -54,20 +54,20 @@ nav ul li{display:inline;}
         flex-basis: 100%;
         }
     }
-#menu{display:none;}
+#menu{display:none}
     @media screen and (max-width:800px){
-    nav ul li{display:block;} /*make a menu items vertical*/
-    #menu{display: block;} /* unhide menu icon */
-    nav ul{display:none;} /*hide the menu item list*/
+    nav ul li{display:block} /*make a menu items vertical*/
+    #menu{display: block} /* unhide menu icon */
+    nav ul{display:none} /*hide the menu item list*/
 }
 .menuHide{
-    display: block
+    display: block;
 }
 @media screen and (max-width:800px) {
     body{
         #columnA, #columnB, #columnC{
             flex-basis: 100%;
         }
-        background-color: rgb(255, 145, 224);
+        background-color: lightpink;
     }
-    }
+}
